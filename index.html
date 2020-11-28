@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Garfinho | CSS + HTML</title>
-    <link rel='stylesheet' type='text/css' href='style.css'>
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
     <div class="forky">
-        <div class="face"></div>
-        <div class="face-mask"></div>
-        <div class="fork1"></div>
-        <div class="fork2"></div>
-        <div class="fork3"></div>
-        <div class="fork4"></div>
+      <div class="face"></div>
+      <div class="face-mask"></div>
+      <div class="fork1"></div>
+      <div class="fork2"></div>
+      <div class="fork3"></div>
+      <div class="fork4"></div>
+      <div class="eyes">
+        <div class="eye">
+          <div class="ball"></div>
+        </div>
         <div class="eye1">
-            <div class="pupil1"></div>
+          <div class="ball1"></div>
         </div>
-        <div class="eye2">
-            <div class="pupil2"></div>
-        </div>
-        <div class="mouth1"></div>
-        <div class="mouth2"></div>
+      </div>
+      <div class="mouth1"></div>
+      <div class="mouth2"></div>
     </div>
-</body>
+    <script>
+      const balls = document.getElementsByClassName("ball", "ball1");
+      document.onmousemove = function () {
+        const x = (event.clientX * 100) / window.innerWidth + "%";
+        const y = (event.clientY * 100) / window.innerHeight + "%";
+
+        for (var i = 0; i < 2; i++) {
+          balls[i].style.left = x;
+          balls[i].style.top = y;
+          balls[i].style.transform = "translate(-" + x + ",-" + y + ")";
+        }
+      };
+      
+    </script>
+  </body>
 </html>

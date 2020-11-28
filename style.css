@@ -56,45 +56,57 @@ body{
     left: -37px;
     transform: rotate(45deg) rotateY(180deg);
 }
-.eye1 {
+.eyes{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+.eye {
     width: 110px;
     height: 110px;
     background: white;
-    position: absolute;
+    position: relative;
     border-radius: 50%;
-    top: -51px;
+    top: 28px;
     left: -99px;
     box-shadow: 1px 1px 3px #888787;
+    overflow: hidden;
+
 }
-.pupil1 {
+.ball {
     width: 70px;
     height: 70px;
     background: black;
     position: absolute;
     border-radius: 50%;
-    top: 38px;
-    left: 5px;
+    top: 50%;
+    left: 50%;
     box-shadow: 1px 1px 3px #888787;
+    transform: translate(-50%, -50%);
 }
-.eye2 {
+.eye1 {
     width: 70px;
     height: 70px;
     background: white;
-    position: absolute;
+    position: relative;
     border-radius: 50%;
-    top: -28px;
+    top: -50px;
     left: 28px;
     box-shadow: 1px 1px 3px #888787;
+    overflow: hidden;
 }
-.pupil2 {
+.ball1 {
     width: 30px;
     height: 30px;
     background: black;
     position: absolute;
     border-radius: 50%;
-    top: 27px;
-    left: 18px;
+    top: 50%;
+    left: 50%;
     box-shadow: 1px 1px 3px #888787;
+    transform: translate(-50%, -50%);
 }
 .mouth1 {
     width: 120px;
@@ -105,4 +117,16 @@ body{
     top: 46px;
     left: -60px;
     clip-path: polygon(0 33);
+    box-shadow: 1px 1px 10px #888787;
 }
+.mounth2{
+    width: 120px;
+    height: 810px;
+    position: absolute;
+    border-radius: 42% 17% 70% 44% / 32% 26% 80% 73%;
+    border: 15px solid #71acc8;
+    top: 46px;
+    left: -60px;
+
+}
+
