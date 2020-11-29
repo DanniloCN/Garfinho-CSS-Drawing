@@ -16,17 +16,26 @@
       <div class="fork4"></div>
       <div class="eyes">
         <div class="eye">
-          <div class="ball"></div>
+          <div class="ball" id="ball1"></div>
         </div>
         <div class="eye1">
-          <div class="ball1"></div>
+          <div class="ball" id="ball2"></div>
         </div>
       </div>
       <div class="mouth1"></div>
       <div class="mouth2"></div>
+      <div class="mouth-mask1"></div>
+      <div class="mouth-mask2"></div>
+      <div class="brow"></div>
+      <div class="brow-mask1"></div>
+      <div class="brow-mask2"></div>
+      <div class="handle"></div>
+      <div class="handle-mask1"></div>
+      <div class="handle-mask2"></div>
     </div>
+
     <script>
-      const balls = document.getElementsByClassName("ball", "ball1");
+      const balls = document.getElementsByClassName("ball");
       document.onmousemove = function () {
         const x = (event.clientX * 100) / window.innerWidth + "%";
         const y = (event.clientY * 100) / window.innerHeight + "%";
@@ -37,7 +46,6 @@
           balls[i].style.transform = "translate(-" + x + ",-" + y + ")";
         }
       };
-      
     </script>
   </body>
 </html>

@@ -58,7 +58,7 @@ body{
 }
 .eyes{
     position: absolute;
-    top: 50%;
+    top: 5%;
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
@@ -75,7 +75,7 @@ body{
     overflow: hidden;
 
 }
-.ball {
+#ball1 {
     width: 70px;
     height: 70px;
     background: black;
@@ -97,7 +97,7 @@ body{
     box-shadow: 1px 1px 3px #888787;
     overflow: hidden;
 }
-.ball1 {
+#ball2 {
     width: 30px;
     height: 30px;
     background: black;
@@ -111,22 +111,90 @@ body{
 .mouth1 {
     width: 120px;
     height: 81px;
-    position: absolute;
-    border-radius: 42% 17% 70% 44% / 32% 26% 80% 73%;
     border: 15px solid #71acc8;
+    border-radius: 42% 17% 70% 44% / 32% 26% 80% 73%;
+    position: absolute;
     top: 46px;
     left: -60px;
-    clip-path: polygon(0 33);
-    box-shadow: 1px 1px 10px #888787;
+    clip-path: polygon(0% 33%, 100% 11%, 99% 100%, 0% 100%);
 }
-.mounth2{
-    width: 120px;
-    height: 810px;
-    position: absolute;
+.mouth2 {
+    width: 142px;
+    height: 81px;
+    position: relative;
     border-radius: 42% 17% 70% 44% / 32% 26% 80% 73%;
     border: 15px solid #71acc8;
-    top: 46px;
-    left: -60px;
-
+    top: -6px;
+    left: -78px;
+    clip-path: polygon(0% 83%, 100% 56%, 99% 100%, 0% 100%);
 }
-
+.brow {
+    width: 150px;
+    height: 51px;
+    position: absolute;
+    border-radius: 32% 43% 39% 52% / 28% 21% 86% 72%;
+    border: 25px solid #d70000;
+    top: -110px;
+    left: -91px;
+    clip-path: polygon(0% 54%, 100% 39%, 99% 100%, 0% 100%);
+    transform: rotate(196deg);
+}
+.handle{
+    width: 80px;
+    height: 100px;
+    background: #f0f0f0;
+    position: absolute;
+    top: 171px;
+    left: -32px;
+}
+.handle-mask1, .handle-mask2{
+    border-radius: 87% 13% 100% 0% / 0% 100% 0% 100%;
+    width: 100px;
+    height: 100px;
+    background: rgb(95, 177, 255);
+    position: absolute;
+    top: 183px;
+    left: -122px;
+}
+.handle-mask2{
+    left: 37px;
+    transform: rotateY(180deg);
+    top: 178px;
+}
+.brow-mask1{
+    width: 28px;
+    height: 23px;
+    background: #d70000;
+    position: absolute;
+    top: -88px;
+    left: -88px;
+    border-radius: 50%;
+}
+.brow-mask2{
+    width: 29px;
+    height: 20px;
+    background: #d70000;
+    position: absolute;
+    top: -50px;
+    left: 73.35px;
+    border-radius: 50%;
+    transform: rotate(26deg);
+}
+.mouth-mask1{
+    width: 22px;
+    height: 22px;
+    background: #71acc8;
+    position: absolute;
+    top: 75px;
+    left: -61px;
+    border-radius: 50%;
+}
+.mouth-mask2{
+    width: 24px;
+    height: 16px;
+    background: #71acc8;
+    position: absolute;
+    top: 54px;
+    left: 64px;
+    border-radius: 50%;
+}
